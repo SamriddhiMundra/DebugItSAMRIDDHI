@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+:root{
+    --primary-color: #003366;
+    --secondary-color: #FF9800;
+    --accent-color: #4CAF50;
+    --background-color:#F4F4F4;
+    --text-color: #333333;
+}
+body{
+    text-align: center;
+    font-family: Poppins, cursive;
+    background-color: var(--background-color);
+    
+}
+.container{
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    border: none;
+    border-radius: 30px;
+    margin-top: 70px;
+    background-color: white;
+}
+
+h3{
+    margin-top: 20px;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 20px 0 0;
+}
+table, th, td{
+    border: 2px solid black;
+
+}
+th, td{
+    padding: 20px;
+    text-align: center;
+}
+th{
+    background-color: var(--primary-color);
+    color: white;
+}
+.speedometer{
+    background: conic-gradient(red 75%, green 75%);
+    border-radius: 70px 70px 0 0;
+    height: 90px;
+    width: 150px;
+    margin: auto;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
+}
+input{
+    font-size: 18px;
+    margin: 10px;
+}
+button{
+    font-size: 18px;
+    background-color:  var(--primary-color);
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 9px;
+}
+button:hover{
+    background-color:var(--accent-color) ;
+}

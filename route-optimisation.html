@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Best Route</title>
+    <link rel="stylesheet" href="route-optimisation.css">
+</head>
+<body>
+    <h2> 🛣 Find Optimised Route 🛣</h2>
+    <h3>Welcome to Route Optimisation Technique! Enter your current location and destination and get your estimated time travel and distance. We wish you a great and happy journey!</h3>
+    
+    <div class="container">
+    <div class="start">
+    <label for="startLoc">Starting Location:</label>
+    <input type="text" id="startLoc" placeholder="Enter the start place"></div>
+        <div class="end">
+    <label for="endLoc">Destination:</label>
+    <input type="text" id="endLoc" placeholder="Enter destination"></div>
+
+    <button id="routeBtn">Get Best Route</button>
+    <p id="fetchingData" style="color: green; font-family: cursive; font-weight: bold; font-size: 20px; display: none;">Fetching data...</p>
+</div>
+
+    <div id="routeInfo"></div>
+
+    <script src="route-optimisation.js"></script>
+
+</body>
+</html>

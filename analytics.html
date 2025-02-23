@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traffic Analytics Dashboard</title>
+    <link rel="stylesheet" href="analytics.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Real Time Traffic Data</h2>
+        <h3>Enter Location</h3>
+        <input type="text" id="location" placeholder="Enter city or place">
+        <br>
+        <button id="trafficDataBtn">Get Traffic Data</button>
+        <h3>Live Traffic Overview</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Location</th>
+                    <th>Conjestion Level</th>
+                    <th>Accidents</th>
+                    <th>Road Closures</th>
+                </tr>
+            </thead>
+            <tbody id="trafficTable">
+                <tr>
+                    <td colspan="4">Enter a location to get data</td>
+                </tr>
+            </tbody>
+        </table>
+        <h3>Current Conjestion Level</h3>
+        <div class="speedometer">
+            <span id="conjestion-level">--</span>%
+        </div>
+    </div>
+    <script src="analytics.js"></script>
+</body>
+</html>

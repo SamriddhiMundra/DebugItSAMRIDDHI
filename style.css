@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+:root{
+    --primary-color: #003366;
+    --secondary-color: #FF9800;
+    --accent-color: #4CAF50;
+    --background-color:#F4F4F4;
+    --text-color: #333333;
+}
+body{
+    background: url('https://img.freepik.com/premium-photo/smart-city-traffic-flow-with-connected-vehicles-digital-overlays_717577-19722.jpg?w=1380');
+    height: 100vh;
+    background-size: cover;
+    position: inherit;
+    margin: 0;
+    padding: 0;
+    color: var(--text-color);
+    font-family: Poppins, cursive;
+    
+}
+body::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.5);
+    z-index: -1;
+    
+}
+.navbar{
+    background-color: var(--primary-color);
+    padding: 15px 0;
+    text-align: center;
+}
+.navbar ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.navbar .element{
+    display: inline-block;
+    padding: 0 15px;
+}
+.navbar .element a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+.navbar .element a:hover{
+    background-color: var(--accent-color);
+    color: white;
+    transform: translateY(-8px);
+
+}
+.main-heading img{
+    height: 5rem;
+}
+.main-heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    border-radius: 10px;
+}
+.main-heading h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: c;
+    font-size: 38px;
+    font-weight: bold;
+    padding: 0 20px;
+
+}
+.sub-heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #2C3E50;
+    font-size: 25px;
+    font-weight: bolder;
+    padding: 0;
+    margin: 0;
+    font-family: cursive !important;
+    
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px 0;
+}
+.traffic-btn{
+    background: linear-gradient(30deg, var(--accent-color), var(--primary-color));
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 15px 30px;
+    margin: 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    
+}
+.traffic-btn:hover{
+    background:linear-gradient(45deg, #27AE60, #2980B9);
+    transform: translateY(-8px);
+
+}
+

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report Issue</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Report a Traffic Issue⚠ </h2>
+        <form action="post" id="traffic-form">
+            <div class="issue-type">
+                <label for="issue-type">Issue type:</label>
+            <select  id="issue-type" required>
+                <option value="">Select an issue</option>
+                <option value="Accident">Accident</option>
+                <option value="Roadblock">Roadblock</option>
+                <option value="Heavy Traffic">Heavy Traffic</option>
+                <option value="Other">Other</option>
+            </select>
+            </div>
+            <div class="location">
+                <label for="location">Location:</label>
+                <input type="text" id="location" placeholder="Enter your location">
+            </div>
+            <div class="despriction">
+                <label for="des">Description:</label>
+                <textarea  id="des" placeholder="Describe your issue"></textarea>
+            </div>
+            <button id="submit">Submit Report</button>
+            <p id="confirmation-msg" style="color:#2ECC71; font-weight: bold; font-size: 30px; display: none;" > ✅Issue Reported Successfully</p>
+        </form>
+
+    </div>
+    
+    <script src="form.js"></script>
+</body>
+</html>
